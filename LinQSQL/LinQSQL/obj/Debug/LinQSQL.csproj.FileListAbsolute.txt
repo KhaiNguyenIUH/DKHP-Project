@@ -1,0 +1,29 @@
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\bin\Debug\LinQSQL.exe.config
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\bin\Debug\LinQSQL.exe
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\bin\Debug\LinQSQL.pdb
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\obj\Debug\LinQSQL.csprojResolveAssemblyReference.cache
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\obj\Debug\LinQSQL.Properties.Resources.resources
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\obj\Debug\LinQSQL.csproj.GenerateResource.Cache
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\obj\Debug\LinQSQL.exe
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\obj\Debug\LinQSQL.pdb
+D:\Documents\OneDrive\Documents\Lap trinh Windows\Tailieu\Examples\2016-2017\LinQSQL\LinQSQL\obj\Debug\LinQSQL.frmQLNV.resources
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\bin\Debug\LinQSQL.exe.config
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\obj\Debug\LinQSQL.exe
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\obj\Debug\LinQSQL.pdb
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\bin\Debug\LinQSQL.exe
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\bin\Debug\LinQSQL.pdb
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\obj\Debug\LinQSQL.csprojResolveAssemblyReference.cache
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\obj\Debug\LinQSQL.frmQLNV.resources
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\obj\Debug\LinQSQL.Properties.Resources.resources
+C:\Users\8x302\Desktop\LinQSQL\LinQSQL\obj\Debug\LinQSQL.csproj.GenerateResource.Cache
+E:\C#\LinQSQL\LinQSQL\bin\Debug\LinQSQL.exe.config
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.exe
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.pdb
+E:\C#\LinQSQL\LinQSQL\bin\Debug\LinQSQL.exe
+E:\C#\LinQSQL\LinQSQL\bin\Debug\LinQSQL.pdb
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.csprojResolveAssemblyReference.cache
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.frmQLNV.resources
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.Properties.Resources.resources
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.csproj.GenerateResource.Cache
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.Form2.resources
+E:\C#\LinQSQL\LinQSQL\obj\Debug\LinQSQL.csproj.CoreCompileInputs.cache

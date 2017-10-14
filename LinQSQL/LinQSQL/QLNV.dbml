@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNV" Class="QLNVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KHKHKH\SQLEXPRESS;Initial Catalog=QLNV;Integrated Security=True" SettingsObjectName="LinQSQL.Properties.Settings" SettingsPropertyName="QLNVConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="Manv" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tennv" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Diachi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mapb" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="PhongBan_NhanVien" Member="PhongBan" ThisKey="Mapb" OtherKey="Mapb" Type="PhongBan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhongBan" Member="PhongBans">
+    <Type Name="PhongBan">
+      <Column Name="Mapb" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tenpb" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="PhongBan_NhanVien" Member="NhanViens" ThisKey="Mapb" OtherKey="Mapb" Type="NhanVien" />
+    </Type>
+  </Table>
+</Database>
