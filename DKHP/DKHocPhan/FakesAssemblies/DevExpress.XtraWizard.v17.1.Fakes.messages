@@ -1,0 +1,32 @@
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for System.Drawing.BitmapSuffixInSameAssemblyAttribute: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardPageChangedEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardPageChangingEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardCommandButtonClickEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardButtonClickEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardPageValidatingEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardPageCommitEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardPageRollbackEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardCustomizeCommandButtonsEventHandler: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.Localization.WizardStringId: type is a value type.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardControlNativeMethods: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardControlUnsafeNativeMethods: type is sealed.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardHitTest: type is a value type.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.WizardStyle: type is a value type.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.Direction: type is a value type.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate stub for DevExpress.XtraWizard.NavigationMode: type is a value type.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for System.Drawing.BitmapSuffixInSameAssemblyAttribute: type is not visible to exported or assembly(DevExpress.XtraWizard.v17.1.Fakes).
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardPageChangedEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardPageChangingEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardCommandButtonClickEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardButtonClickEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardPageValidatingEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardPageCommitEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardPageRollbackEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardCustomizeCommandButtonsEventHandler: type is a delegate.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.Localization.WizardStringId: type is an enum.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardControlNativeMethods: type is not visible to exported or assembly(DevExpress.XtraWizard.v17.1.Fakes).
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardControlUnsafeNativeMethods: type is not visible to exported or assembly(DevExpress.XtraWizard.v17.1.Fakes).
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardHitTest: type is an enum.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.WizardStyle: type is an enum.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.Direction: type is an enum.
+E:\C#\DKHP\DKHocPhan\Fakes\DevExpress.XtraWizard.v17.1.fakes : warning : Cannot generate shim for DevExpress.XtraWizard.NavigationMode: type is an enum.

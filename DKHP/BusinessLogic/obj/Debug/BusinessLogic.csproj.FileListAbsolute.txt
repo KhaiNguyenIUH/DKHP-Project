@@ -1,0 +1,11 @@
+E:\C#\DKHP\BusinessLogic\bin\Debug\BusinessLogic.dll
+E:\C#\DKHP\BusinessLogic\bin\Debug\BusinessLogic.pdb
+E:\C#\DKHP\BusinessLogic\bin\Debug\BusinessEntity.dll
+E:\C#\DKHP\BusinessLogic\bin\Debug\DAL.dll
+E:\C#\DKHP\BusinessLogic\bin\Debug\BusinessEntity.pdb
+E:\C#\DKHP\BusinessLogic\bin\Debug\DAL.pdb
+E:\C#\DKHP\BusinessLogic\bin\Debug\DAL.dll.config
+E:\C#\DKHP\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+E:\C#\DKHP\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+E:\C#\DKHP\BusinessLogic\obj\Debug\BusinessLogic.dll
+E:\C#\DKHP\BusinessLogic\obj\Debug\BusinessLogic.pdb

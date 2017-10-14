@@ -1,0 +1,5 @@
+E:\C#\DKHP\BusinessEntity\bin\Debug\BusinessEntity.dll
+E:\C#\DKHP\BusinessEntity\bin\Debug\BusinessEntity.pdb
+E:\C#\DKHP\BusinessEntity\obj\Debug\BusinessEntity.csproj.CoreCompileInputs.cache
+E:\C#\DKHP\BusinessEntity\obj\Debug\BusinessEntity.dll
+E:\C#\DKHP\BusinessEntity\obj\Debug\BusinessEntity.pdb
