@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="eChiTietLopHocPhan.cs" />
     <Compile Include="eSinhVien.cs" />
+    <Compile Include="eSVDangKi.cs" />
     <Compile Include="eTaiKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

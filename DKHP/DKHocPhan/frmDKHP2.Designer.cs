@@ -95,6 +95,7 @@
             this.btnDK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDK.Textcolor = System.Drawing.Color.White;
             this.btnDK.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDK.Click += new System.EventHandler(this.btnDK_Click);
             // 
             // textBox1
             // 
@@ -102,6 +103,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(158, 22);
             this.textBox1.TabIndex = 53;
+            this.textBox1.Visible = false;
             // 
             // groupPanel2
             // 
