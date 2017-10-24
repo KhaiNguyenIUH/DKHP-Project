@@ -1,7 +1,6 @@
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmDiem.resources
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmDKHP2.resources
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmGiangVien.resources
-E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmGV.resources
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmLichThi.resources
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmLogin.resources
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmPDT.resources
@@ -96,7 +95,6 @@ E:\C#\DKHP\DKHocPhan\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
 E:\C#\DKHP\DKHocPhan\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
 E:\C#\DKHP\DKHocPhan\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
 E:\C#\DKHP\DKHocPhan\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
-E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmSV.resources
 E:\C#\DKHP\DKHocPhan\bin\Debug\BusinessEntity.dll
 E:\C#\DKHP\DKHocPhan\bin\Debug\BusinessLogic.dll
 E:\C#\DKHP\DKHocPhan\bin\Debug\DAL.dll
@@ -106,10 +104,11 @@ E:\C#\DKHP\DKHocPhan\bin\Debug\DAL.pdb
 E:\C#\DKHP\DKHocPhan\bin\Debug\DAL.dll.config
 E:\C#\DKHP\DKHocPhan\obj\Debug\Presenstation.csprojResolveAssemblyReference.cache
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.DsLHP.resources
-E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.LichDay.resources
-E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.LichHoc.resources
-E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.MoLop.resources
-E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.QLSV.resources
 E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmSinhVien.resources
 E:\C#\DKHP\DKHocPhan\bin\Debug\Bunifu_UI_v1.52.dll
-E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.exe.licenses
+E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmQLSV.resources
+E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.FrmTKB.resources
+E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmDiemSV.resources
+E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmLichDay.resources
+E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmMoLHP.resources
+E:\C#\DKHP\DKHocPhan\obj\Debug\DKHocPhan.frmQLGV.resources

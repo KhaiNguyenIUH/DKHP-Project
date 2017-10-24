@@ -30,35 +30,51 @@ namespace DKHocPhan
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            try
+            if (txtID.Text != "" && txtPass.Text != "")
             {
-                if (tkBLL.KiemTraDangNhap(int.Parse(txtID.Text), txtPass.Text) == 1)
+                try
                 {
-                    frmSinhVien fsv = new frmSinhVien(txtID.Text);
-                    fsv.Show();
-                    this.Hide();
-                }
-                else if (tkBLL.KiemTraDangNhap(int.Parse(txtID.Text), txtPass.Text) == 2)
-                {
-                    frmGiangVien fgv = new frmGiangVien(txtID.Text);
-                    fgv.Show();
-                    this.Hide();
+                    if (tkBLL.KiemTraDangNhap(int.Parse(txtID.Text), txtPass.Text) == 1)
+                    {
+                        frmSinhVien fsv = new frmSinhVien(txtID.Text);
+                        fsv.Show();
+                        bunifuTransition1.ShowSync(fsv);
+                        this.Hide();
+                    }
+                    else if (tkBLL.KiemTraDangNhap(int.Parse(txtID.Text), txtPass.Text) == 2)
+                    {
+                        frmGiangVien fgv = new frmGiangVien(txtID.Text);
+                        fgv.Show();
+                        bunifuTransition1.Show(fgv);
+                        this.Hide();
 
+                    }
+                    else if (tkBLL.KiemTraDangNhap(int.Parse(txtID.Text), txtPass.Text) == 3)
+                    {
+                        frmPDT pdt = new frmPDT();
+                        pdt.Show();
+                        bunifuTransition1.Show(pdt);
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai Thông Tin Tài Khoản");
+                        txtID.Clear();
+                        txtPass.Clear();
+                        txtID.Focus();
+                    }
                 }
-                else
+                catch
                 {
-                    MessageBox.Show("Sai Thông Tin Tài Khoản");
+                    MessageBox.Show("Trường ID Là Kiểu Số");
                     txtID.Clear();
                     txtPass.Clear();
                     txtID.Focus();
                 }
             }
-            catch(Exception ex)
+            else
             {
-                MessageBox.Show("Sai Định Dạng");
-                txtID.Clear();
-                txtPass.Clear();
-                txtID.Focus();
+                MessageBox.Show("Chưa Nhập Thông Tin");
             }
         }
         private void frmLogin_Load(object sender, EventArgs e)

@@ -39,18 +39,15 @@
             this.dgrLHPDK = new System.Windows.Forms.DataGridView();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.lblTenGiaoVien = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblTongso = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.lblMaLopHP = new System.Windows.Forms.Label();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.cboHocKy = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrLopHocPhan)).BeginInit();
             this.groupPanel1.SuspendLayout();
@@ -58,7 +55,6 @@
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrLHPDK)).BeginInit();
             this.groupPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDK
@@ -82,7 +78,7 @@
             this.btnDK.IconVisible = true;
             this.btnDK.IconZoom = 90D;
             this.btnDK.IsTab = false;
-            this.btnDK.Location = new System.Drawing.Point(465, 382);
+            this.btnDK.Location = new System.Drawing.Point(454, 422);
             this.btnDK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDK.Name = "btnDK";
             this.btnDK.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -99,9 +95,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(820, 12);
+            this.textBox1.Location = new System.Drawing.Point(1008, 1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 22);
+            this.textBox1.Size = new System.Drawing.Size(10, 22);
             this.textBox1.TabIndex = 53;
             this.textBox1.Visible = false;
             // 
@@ -114,7 +110,7 @@
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel2.DrawTitleBox = false;
             this.groupPanel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupPanel2.Location = new System.Drawing.Point(72, 338);
+            this.groupPanel2.Location = new System.Drawing.Point(61, 378);
             this.groupPanel2.Name = "groupPanel2";
             this.groupPanel2.Size = new System.Drawing.Size(386, 165);
             // 
@@ -171,7 +167,7 @@
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.DrawTitleBox = false;
             this.groupPanel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupPanel1.Location = new System.Drawing.Point(69, 166);
+            this.groupPanel1.Location = new System.Drawing.Point(58, 206);
             this.groupPanel1.Name = "groupPanel1";
             this.groupPanel1.Size = new System.Drawing.Size(389, 165);
             // 
@@ -216,6 +212,7 @@
             this.dgrMon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrMon.Size = new System.Drawing.Size(383, 138);
             this.dgrMon.TabIndex = 2;
+            this.dgrMon.DataSourceChanged += new System.EventHandler(this.dgrMon_DataSourceChanged);
             this.dgrMon.SelectionChanged += new System.EventHandler(this.dgrMon_SelectionChanged);
             // 
             // buttonX1
@@ -239,7 +236,7 @@
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.DrawTitleBox = false;
             this.groupPanel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupPanel3.Location = new System.Drawing.Point(547, 334);
+            this.groupPanel3.Location = new System.Drawing.Point(539, 379);
             this.groupPanel3.Name = "groupPanel3";
             this.groupPanel3.Size = new System.Drawing.Size(434, 164);
             // 
@@ -275,12 +272,13 @@
             // 
             // dgrLHPDK
             // 
+            this.dgrLHPDK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgrLHPDK.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.dgrLHPDK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgrLHPDK.Location = new System.Drawing.Point(0, 0);
             this.dgrLHPDK.MultiSelect = false;
             this.dgrLHPDK.Name = "dgrLHPDK";
             this.dgrLHPDK.RowTemplate.Height = 24;
+            this.dgrLHPDK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrLHPDK.Size = new System.Drawing.Size(428, 137);
             this.dgrLHPDK.TabIndex = 2;
             // 
@@ -291,7 +289,6 @@
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel4.Controls.Add(this.lblTenGiaoVien);
-            this.groupPanel4.Controls.Add(this.label1);
             this.groupPanel4.Controls.Add(this.lblTongso);
             this.groupPanel4.Controls.Add(this.lblSoLuong);
             this.groupPanel4.Controls.Add(this.lblMaLopHP);
@@ -301,7 +298,7 @@
             this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupPanel4.IsShadowEnabled = true;
-            this.groupPanel4.Location = new System.Drawing.Point(547, 160);
+            this.groupPanel4.Location = new System.Drawing.Point(539, 206);
             this.groupPanel4.Name = "groupPanel4";
             this.groupPanel4.Size = new System.Drawing.Size(434, 165);
             // 
@@ -343,19 +340,10 @@
             this.lblTenGiaoVien.Size = new System.Drawing.Size(0, 19);
             this.lblTenGiaoVien.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(141, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "trên";
-            // 
             // lblTongso
             // 
             this.lblTongso.AutoSize = true;
-            this.lblTongso.Location = new System.Drawing.Point(203, 63);
+            this.lblTongso.Location = new System.Drawing.Point(275, 63);
             this.lblTongso.Name = "lblTongso";
             this.lblTongso.Size = new System.Drawing.Size(0, 19);
             this.lblTongso.TabIndex = 1;
@@ -415,92 +403,48 @@
             this.labelX4.TabIndex = 0;
             this.labelX4.Text = "Mã Lớp Học Phần:";
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.Black;
-            this.radioButton1.Location = new System.Drawing.Point(733, 41);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(105, 21);
-            this.radioButton1.TabIndex = 51;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Đăng Kí Mới";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(604, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 17);
-            this.label3.TabIndex = 48;
-            this.label3.Text = "Loại Học Phần";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(81, 48);
+            this.label2.Location = new System.Drawing.Point(96, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 17);
             this.label2.TabIndex = 49;
             this.label2.Text = "Học Kì";
             // 
-            // radioButton2
+            // cboHocKy
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.Color.Black;
-            this.radioButton2.Location = new System.Drawing.Point(733, 68);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(77, 21);
-            this.radioButton2.TabIndex = 52;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Học Lại";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.cboHocKy.FormattingEnabled = true;
+            this.cboHocKy.Location = new System.Drawing.Point(170, 104);
+            this.cboHocKy.Name = "cboHocKy";
+            this.cboHocKy.Size = new System.Drawing.Size(121, 24);
+            this.cboHocKy.TabIndex = 55;
+            this.cboHocKy.SelectedIndexChanged += new System.EventHandler(this.cboHocKy_SelectedIndexChanged);
             // 
-            // numericUpDown2
+            // textBox2
             // 
-            this.numericUpDown2.ForeColor = System.Drawing.Color.Black;
-            this.numericUpDown2.Location = new System.Drawing.Point(176, 46);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown2.TabIndex = 46;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            this.textBox2.Location = new System.Drawing.Point(0, 1);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(10, 22);
+            this.textBox2.TabIndex = 53;
+            this.textBox2.Visible = false;
             // 
             // frmDKHP2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1050, 548);
+            this.ClientSize = new System.Drawing.Size(1018, 648);
+            this.Controls.Add(this.cboHocKy);
             this.Controls.Add(this.btnDK);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupPanel2);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.groupPanel3);
             this.Controls.Add(this.groupPanel4);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.radioButton2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDKHP2";
@@ -515,7 +459,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgrLHPDK)).EndInit();
             this.groupPanel4.ResumeLayout(false);
             this.groupPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -536,15 +479,12 @@
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label lblTenGiaoVien;
         private System.Windows.Forms.Label lblTongso;
         private System.Windows.Forms.Label lblSoLuong;
         private System.Windows.Forms.Label lblMaLopHP;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboHocKy;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

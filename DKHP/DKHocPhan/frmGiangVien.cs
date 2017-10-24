@@ -82,18 +82,6 @@ namespace DKHocPhan
             Application.Exit();
         }
 
-        private void btndrop_Click(object sender, EventArgs e)
-        {
-            if (panel1.Visible == false)
-            {
-                bunifuTransition1.ShowSync(panel1);
-                panel1.Visible = true;
-            }
-            else if (panel1.Visible == true)
-            {
-                panel1.Visible = false;
-            }
-        }
 
         private void DoiMau_Tick(object sender, EventArgs e)
         {
@@ -112,6 +100,55 @@ namespace DKHocPhan
             }
             else
                 curcolor = 0;
+        }
+
+        private void btnCo_Click(object sender, EventArgs e)
+        {
+            frmLogin t = new frmLogin();
+            t.Show();
+            this.Hide();
+        }
+
+        private void btnKhong_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void btnLichDay_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            this.panel2.Controls.Clear();
+            frmLichDay dk = new frmLichDay(lblMGV.Text);
+            dk.TopLevel = false;
+            this.panel2.Controls.Add(dk);
+            dk.Show();
+            bunifuTransition1.Show(panel2);
+            this.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        private void btnXemDiem_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            this.panel2.Controls.Clear();
+            frmDiem dk = new frmDiem(lblMGV.Text);
+            dk.TopLevel = false;
+            this.panel2.Controls.Add(dk);
+            dk.Show();
+            bunifuTransition1.Show(panel2);
+            this.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        private void btMenu_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible == false)
+            {
+                bunifuTransition3.Show(panel1);
+                panel1.Visible = true;
+            }
+            else if (panel1.Visible == true)
+            {
+                panel1.Visible = false;
+            }
         }
     }
 }

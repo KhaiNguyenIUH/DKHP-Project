@@ -33,7 +33,6 @@
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSinhVien));
-            this.ptrAva = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,49 +41,41 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btndrop = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblLogout = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnKhong = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCo = new DevExpress.XtraEditors.SimpleButton();
+            this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btndrop = new DevExpress.XtraEditors.SimpleButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.btnThoat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblMSV = new System.Windows.Forms.Label();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label2 = new System.Windows.Forms.Label();
+            this.ptrAva = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnLichHoc = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblTen = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnXemDiem = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblLop = new System.Windows.Forms.Label();
+            this.btnDKHP = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblKhoa = new System.Windows.Forms.Label();
             this.lblNganh = new System.Windows.Forms.Label();
-            this.btnThoat = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnLichHoc = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLichThi = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnXemDiem = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDKHP = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuTransition3 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.DoiMau = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.ptrAva)).BeginInit();
+            this.lblNam = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ptrAva
-            // 
-            this.bunifuTransition3.SetDecoration(this.ptrAva, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.ptrAva, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.ptrAva, BunifuAnimatorNS.DecorationType.None);
-            this.ptrAva.Location = new System.Drawing.Point(58, 12);
-            this.ptrAva.Name = "ptrAva";
-            this.ptrAva.Size = new System.Drawing.Size(150, 100);
-            this.ptrAva.TabIndex = 3;
-            this.ptrAva.TabStop = false;
             // 
             // label10
             // 
@@ -170,7 +161,7 @@
             this.bunifuTransition3.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.panel2.Location = new System.Drawing.Point(263, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1018, 643);
+            this.panel2.Size = new System.Drawing.Size(1018, 648);
             this.panel2.TabIndex = 3;
             this.panel2.Visible = false;
             // 
@@ -198,16 +189,27 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.btndrop);
             this.panel3.Controls.Add(this.panel1);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.btndrop);
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.btnThoat);
+            this.panel3.Controls.Add(this.lblMSV);
             this.panel3.Controls.Add(this.bunifuSeparator1);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.ptrAva);
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.btnLichHoc);
-            this.panel3.Controls.Add(this.btnLichThi);
+            this.panel3.Controls.Add(this.lblTen);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.lblNam);
             this.panel3.Controls.Add(this.btnXemDiem);
+            this.panel3.Controls.Add(this.lblLop);
             this.panel3.Controls.Add(this.btnDKHP);
+            this.panel3.Controls.Add(this.lblKhoa);
+            this.panel3.Controls.Add(this.lblNganh);
             this.bunifuTransition1.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition3.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
@@ -218,6 +220,85 @@
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.bunifuCustomLabel2);
+            this.panel1.Controls.Add(this.btnKhong);
+            this.panel1.Controls.Add(this.btnCo);
+            this.bunifuTransition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Location = new System.Drawing.Point(17, 36);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(244, 217);
+            this.panel1.TabIndex = 8;
+            this.panel1.Visible = false;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(15, 72);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(216, 17);
+            this.bunifuCustomLabel2.TabIndex = 17;
+            this.bunifuCustomLabel2.Text = "Bạn Chắc Chắn Muốn Đăng Xuất?";
+            this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnKhong
+            // 
+            this.btnKhong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnKhong.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btnKhong.Appearance.ForeColor = System.Drawing.Color.White;
+            this.btnKhong.Appearance.Options.UseBackColor = true;
+            this.btnKhong.Appearance.Options.UseFont = true;
+            this.btnKhong.Appearance.Options.UseForeColor = true;
+            this.btnKhong.AppearanceHovered.BackColor = System.Drawing.Color.Gray;
+            this.btnKhong.AppearanceHovered.Options.UseBackColor = true;
+            this.btnKhong.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnKhong.AppearancePressed.Options.UseBackColor = true;
+            this.btnKhong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.bunifuTransition1.SetDecoration(this.btnKhong, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnKhong, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.btnKhong, BunifuAnimatorNS.DecorationType.None);
+            this.btnKhong.Location = new System.Drawing.Point(132, 135);
+            this.btnKhong.Name = "btnKhong";
+            this.btnKhong.Size = new System.Drawing.Size(51, 23);
+            this.btnKhong.TabIndex = 17;
+            this.btnKhong.Text = "Không";
+            this.btnKhong.ToolTip = "Đăng Xuất";
+            this.btnKhong.Click += new System.EventHandler(this.btnKhong_Click);
+            // 
+            // btnCo
+            // 
+            this.btnCo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnCo.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btnCo.Appearance.ForeColor = System.Drawing.Color.White;
+            this.btnCo.Appearance.Options.UseBackColor = true;
+            this.btnCo.Appearance.Options.UseFont = true;
+            this.btnCo.Appearance.Options.UseForeColor = true;
+            this.btnCo.AppearanceHovered.BackColor = System.Drawing.Color.Gray;
+            this.btnCo.AppearanceHovered.Options.UseBackColor = true;
+            this.btnCo.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCo.AppearancePressed.Options.UseBackColor = true;
+            this.btnCo.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.bunifuTransition1.SetDecoration(this.btnCo, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnCo, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.btnCo, BunifuAnimatorNS.DecorationType.None);
+            this.btnCo.Location = new System.Drawing.Point(55, 135);
+            this.btnCo.Name = "btnCo";
+            this.btnCo.Size = new System.Drawing.Size(51, 23);
+            this.btnCo.TabIndex = 17;
+            this.btnCo.Text = "Có";
+            this.btnCo.ToolTip = "Đăng Xuất";
+            this.btnCo.Click += new System.EventHandler(this.btnCo_Click);
             // 
             // label9
             // 
@@ -233,74 +314,41 @@
             this.label9.Text = "© K ";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btndrop
-            // 
-            this.btndrop.Appearance.ForeColor = System.Drawing.Color.White;
-            this.btndrop.Appearance.Options.UseForeColor = true;
-            this.btndrop.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.bunifuTransition1.SetDecoration(this.btndrop, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.btndrop, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.btndrop, BunifuAnimatorNS.DecorationType.None);
-            this.btndrop.Location = new System.Drawing.Point(230, 12);
-            this.btndrop.Name = "btndrop";
-            this.btndrop.Size = new System.Drawing.Size(31, 23);
-            this.btndrop.TabIndex = 17;
-            this.btndrop.Text = "...";
-            this.btndrop.Click += new System.EventHandler(this.btndrop_Click_1);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lblLogout);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.bunifuSeparator2);
-            this.panel1.Controls.Add(this.lblMSV);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.lblTen);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.lblLop);
-            this.panel1.Controls.Add(this.lblKhoa);
-            this.panel1.Controls.Add(this.lblNganh);
-            this.bunifuTransition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(17, 36);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 217);
-            this.panel1.TabIndex = 8;
-            this.panel1.Visible = false;
-            // 
-            // lblLogout
-            // 
-            this.lblLogout.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.lblLogout, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.lblLogout, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.lblLogout, BunifuAnimatorNS.DecorationType.None);
-            this.lblLogout.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogout.ForeColor = System.Drawing.Color.White;
-            this.lblLogout.Location = new System.Drawing.Point(139, 187);
-            this.lblLogout.Name = "lblLogout";
-            this.lblLogout.Size = new System.Drawing.Size(88, 21);
-            this.lblLogout.TabIndex = 17;
-            this.lblLogout.Text = "Đăng Xuất";
-            this.lblLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.bunifuTransition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 11);
+            this.label1.Location = new System.Drawing.Point(23, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 21);
+            this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "Mã Sinh Viên:";
+            // 
+            // btndrop
+            // 
+            this.btndrop.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btndrop.Appearance.ForeColor = System.Drawing.Color.White;
+            this.btndrop.Appearance.Options.UseBackColor = true;
+            this.btndrop.Appearance.Options.UseForeColor = true;
+            this.btndrop.AppearanceHovered.BackColor = System.Drawing.Color.Gray;
+            this.btndrop.AppearanceHovered.Options.UseBackColor = true;
+            this.btndrop.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btndrop.AppearancePressed.Options.UseBackColor = true;
+            this.btndrop.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.bunifuTransition1.SetDecoration(this.btndrop, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btndrop, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.btndrop, BunifuAnimatorNS.DecorationType.None);
+            this.btndrop.Location = new System.Drawing.Point(210, 12);
+            this.btndrop.Name = "btndrop";
+            this.btndrop.Size = new System.Drawing.Size(51, 23);
+            this.btndrop.TabIndex = 17;
+            this.btndrop.Text = "Logout";
+            this.btndrop.ToolTip = "Đăng Xuất";
+            this.btndrop.Click += new System.EventHandler(this.btndrop_Click_1);
             // 
             // label3
             // 
@@ -308,136 +356,13 @@
             this.bunifuTransition3.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 76);
+            this.label3.Location = new System.Drawing.Point(23, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 21);
+            this.label3.Size = new System.Drawing.Size(90, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Tên Sinh Viên";
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 167);
-            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(261, 16);
-            this.bunifuSeparator2.TabIndex = 16;
-            this.bunifuSeparator2.Transparency = 255;
-            this.bunifuSeparator2.Vertical = false;
-            // 
-            // lblMSV
-            // 
-            this.lblMSV.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.lblMSV, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.lblMSV, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.lblMSV, BunifuAnimatorNS.DecorationType.None);
-            this.lblMSV.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMSV.ForeColor = System.Drawing.Color.White;
-            this.lblMSV.Location = new System.Drawing.Point(137, 11);
-            this.lblMSV.Name = "lblMSV";
-            this.lblMSV.Size = new System.Drawing.Size(0, 21);
-            this.lblMSV.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 142);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 21);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Lớp";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 21);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Khoa:";
-            // 
-            // lblTen
-            // 
-            this.lblTen.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.lblTen, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.lblTen, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.lblTen, BunifuAnimatorNS.DecorationType.None);
-            this.lblTen.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTen.ForeColor = System.Drawing.Color.White;
-            this.lblTen.Location = new System.Drawing.Point(120, 76);
-            this.lblTen.Name = "lblTen";
-            this.lblTen.Size = new System.Drawing.Size(0, 21);
-            this.lblTen.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(3, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 21);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Ngành";
-            // 
-            // lblLop
-            // 
-            this.lblLop.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.lblLop, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.lblLop, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.lblLop, BunifuAnimatorNS.DecorationType.None);
-            this.lblLop.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLop.ForeColor = System.Drawing.Color.White;
-            this.lblLop.Location = new System.Drawing.Point(56, 142);
-            this.lblLop.Name = "lblLop";
-            this.lblLop.Size = new System.Drawing.Size(0, 21);
-            this.lblLop.TabIndex = 12;
-            // 
-            // lblKhoa
-            // 
-            this.lblKhoa.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.lblKhoa, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.lblKhoa, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.lblKhoa, BunifuAnimatorNS.DecorationType.None);
-            this.lblKhoa.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKhoa.ForeColor = System.Drawing.Color.White;
-            this.lblKhoa.Location = new System.Drawing.Point(66, 42);
-            this.lblKhoa.Name = "lblKhoa";
-            this.lblKhoa.Size = new System.Drawing.Size(0, 21);
-            this.lblKhoa.TabIndex = 14;
-            // 
-            // lblNganh
-            // 
-            this.lblNganh.AutoSize = true;
-            this.bunifuTransition3.SetDecoration(this.lblNganh, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.lblNganh, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.lblNganh, BunifuAnimatorNS.DecorationType.None);
-            this.lblNganh.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNganh.ForeColor = System.Drawing.Color.White;
-            this.lblNganh.Location = new System.Drawing.Point(72, 110);
-            this.lblNganh.Name = "lblNganh";
-            this.lblNganh.Size = new System.Drawing.Size(0, 21);
-            this.lblNganh.TabIndex = 13;
             // 
             // btnThoat
             // 
@@ -478,6 +403,19 @@
             this.btnThoat.TextFont = new System.Drawing.Font("Mistral", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // lblMSV
+            // 
+            this.lblMSV.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.lblMSV, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.lblMSV, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.lblMSV, BunifuAnimatorNS.DecorationType.None);
+            this.lblMSV.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMSV.ForeColor = System.Drawing.Color.White;
+            this.lblMSV.Location = new System.Drawing.Point(121, 144);
+            this.lblMSV.Name = "lblMSV";
+            this.lblMSV.Size = new System.Drawing.Size(0, 17);
+            this.lblMSV.TabIndex = 15;
+            // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
@@ -493,6 +431,45 @@
             this.bunifuSeparator1.TabIndex = 16;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(23, 275);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Lớp";
+            // 
+            // ptrAva
+            // 
+            this.bunifuTransition3.SetDecoration(this.ptrAva, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.ptrAva, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.ptrAva, BunifuAnimatorNS.DecorationType.None);
+            this.ptrAva.Location = new System.Drawing.Point(42, 10);
+            this.ptrAva.Name = "ptrAva";
+            this.ptrAva.Size = new System.Drawing.Size(150, 100);
+            this.ptrAva.TabIndex = 3;
+            this.ptrAva.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(23, 175);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 17);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Khoa:";
             // 
             // btnLichHoc
             // 
@@ -520,7 +497,7 @@
             this.btnLichHoc.IconVisible = true;
             this.btnLichHoc.IconZoom = 90D;
             this.btnLichHoc.IsTab = true;
-            this.btnLichHoc.Location = new System.Drawing.Point(26, 454);
+            this.btnLichHoc.Location = new System.Drawing.Point(26, 466);
             this.btnLichHoc.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnLichHoc.Name = "btnLichHoc";
             this.btnLichHoc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
@@ -533,46 +510,34 @@
             this.btnLichHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLichHoc.Textcolor = System.Drawing.Color.White;
             this.btnLichHoc.TextFont = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichHoc.Click += new System.EventHandler(this.btnLichHoc_Click);
             // 
-            // btnLichThi
+            // lblTen
             // 
-            this.btnLichThi.Activecolor = System.Drawing.Color.DodgerBlue;
-            this.btnLichThi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnLichThi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLichThi.BorderRadius = 5;
-            this.btnLichThi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnLichThi.ButtonText = "    Xem Lịch Thi";
-            this.btnLichThi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition3.SetDecoration(this.btnLichThi, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.btnLichThi, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.btnLichThi, BunifuAnimatorNS.DecorationType.None);
-            this.btnLichThi.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLichThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichThi.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLichThi.Iconimage = null;
-            this.btnLichThi.Iconimage_right = null;
-            this.btnLichThi.Iconimage_right_Selected = null;
-            this.btnLichThi.Iconimage_Selected = null;
-            this.btnLichThi.IconMarginLeft = 0;
-            this.btnLichThi.IconMarginRight = 0;
-            this.btnLichThi.IconRightVisible = true;
-            this.btnLichThi.IconRightZoom = 0D;
-            this.btnLichThi.IconVisible = true;
-            this.btnLichThi.IconZoom = 90D;
-            this.btnLichThi.IsTab = true;
-            this.btnLichThi.Location = new System.Drawing.Point(26, 391);
-            this.btnLichThi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnLichThi.Name = "btnLichThi";
-            this.btnLichThi.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnLichThi.OnHovercolor = System.Drawing.Color.DodgerBlue;
-            this.btnLichThi.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLichThi.selected = false;
-            this.btnLichThi.Size = new System.Drawing.Size(218, 53);
-            this.btnLichThi.TabIndex = 0;
-            this.btnLichThi.Text = "    Xem Lịch Thi";
-            this.btnLichThi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichThi.Textcolor = System.Drawing.Color.White;
-            this.btnLichThi.TextFont = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.lblTen, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.lblTen, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.lblTen, BunifuAnimatorNS.DecorationType.None);
+            this.lblTen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.ForeColor = System.Drawing.Color.White;
+            this.lblTen.Location = new System.Drawing.Point(121, 209);
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(0, 17);
+            this.lblTen.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(23, 243);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 17);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Ngành";
             // 
             // btnXemDiem
             // 
@@ -600,7 +565,7 @@
             this.btnXemDiem.IconVisible = true;
             this.btnXemDiem.IconZoom = 90D;
             this.btnXemDiem.IsTab = true;
-            this.btnXemDiem.Location = new System.Drawing.Point(26, 328);
+            this.btnXemDiem.Location = new System.Drawing.Point(26, 403);
             this.btnXemDiem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnXemDiem.Name = "btnXemDiem";
             this.btnXemDiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
@@ -614,6 +579,19 @@
             this.btnXemDiem.Textcolor = System.Drawing.Color.White;
             this.btnXemDiem.TextFont = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemDiem.Click += new System.EventHandler(this.btnDiem_Click);
+            // 
+            // lblLop
+            // 
+            this.lblLop.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.lblLop, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.lblLop, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.lblLop, BunifuAnimatorNS.DecorationType.None);
+            this.lblLop.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLop.ForeColor = System.Drawing.Color.White;
+            this.lblLop.Location = new System.Drawing.Point(67, 275);
+            this.lblLop.Name = "lblLop";
+            this.lblLop.Size = new System.Drawing.Size(0, 17);
+            this.lblLop.TabIndex = 12;
             // 
             // btnDKHP
             // 
@@ -641,7 +619,7 @@
             this.btnDKHP.IconVisible = true;
             this.btnDKHP.IconZoom = 90D;
             this.btnDKHP.IsTab = true;
-            this.btnDKHP.Location = new System.Drawing.Point(26, 265);
+            this.btnDKHP.Location = new System.Drawing.Point(26, 340);
             this.btnDKHP.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnDKHP.Name = "btnDKHP";
             this.btnDKHP.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
@@ -655,6 +633,32 @@
             this.btnDKHP.Textcolor = System.Drawing.Color.White;
             this.btnDKHP.TextFont = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDKHP.Click += new System.EventHandler(this.btnDKHP_Click);
+            // 
+            // lblKhoa
+            // 
+            this.lblKhoa.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.lblKhoa, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.lblKhoa, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.lblKhoa, BunifuAnimatorNS.DecorationType.None);
+            this.lblKhoa.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKhoa.ForeColor = System.Drawing.Color.White;
+            this.lblKhoa.Location = new System.Drawing.Point(77, 175);
+            this.lblKhoa.Name = "lblKhoa";
+            this.lblKhoa.Size = new System.Drawing.Size(0, 17);
+            this.lblKhoa.TabIndex = 14;
+            // 
+            // lblNganh
+            // 
+            this.lblNganh.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.lblNganh, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.lblNganh, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.lblNganh, BunifuAnimatorNS.DecorationType.None);
+            this.lblNganh.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNganh.ForeColor = System.Drawing.Color.White;
+            this.lblNganh.Location = new System.Drawing.Point(77, 243);
+            this.lblNganh.Name = "lblNganh";
+            this.lblNganh.Size = new System.Drawing.Size(0, 17);
+            this.lblNganh.TabIndex = 13;
             // 
             // pictureBox2
             // 
@@ -731,6 +735,33 @@
             this.DoiMau.Interval = 1;
             this.DoiMau.Tick += new System.EventHandler(this.DoiMau_Tick);
             // 
+            // lblNam
+            // 
+            this.lblNam.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.lblNam, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.lblNam, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.lblNam, BunifuAnimatorNS.DecorationType.None);
+            this.lblNam.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNam.ForeColor = System.Drawing.Color.White;
+            this.lblNam.Location = new System.Drawing.Point(136, 301);
+            this.lblNam.Name = "lblNam";
+            this.lblNam.Size = new System.Drawing.Size(0, 17);
+            this.lblNam.TabIndex = 12;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.bunifuTransition3.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
+            this.label12.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(23, 301);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(104, 17);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Sinh Viên Năm: ";
+            // 
             // frmSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -747,10 +778,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSinhVien";
             this.Load += new System.EventHandler(this.frmSinhVien_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.ptrAva)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -770,7 +802,6 @@
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
         private System.Windows.Forms.Panel panel3;
         private Bunifu.Framework.UI.BunifuFlatButton btnLichHoc;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLichThi;
         private Bunifu.Framework.UI.BunifuFlatButton btnXemDiem;
         private Bunifu.Framework.UI.BunifuFlatButton btnDKHP;
         private Bunifu.Framework.UI.BunifuFlatButton btnThoat;
@@ -787,11 +818,14 @@
         private BunifuAnimatorNS.BunifuTransition bunifuTransition2;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblLogout;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition3;
         private DevExpress.XtraEditors.SimpleButton btndrop;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Timer DoiMau;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private DevExpress.XtraEditors.SimpleButton btnCo;
+        private DevExpress.XtraEditors.SimpleButton btnKhong;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblNam;
     }
 }

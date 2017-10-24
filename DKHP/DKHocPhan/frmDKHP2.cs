@@ -18,10 +18,11 @@ namespace DKHocPhan
     public partial class frmDKHP2 : Form
     {             
         DKHPDataContext db = new DKHPDataContext();
-        public frmDKHP2(string input)//sử dụng Constructor trao đổi dữ liệu giữa 2 form
+        public frmDKHP2(string input,string input2)//sử dụng Constructor trao đổi dữ liệu giữa 2 form
         {
             InitializeComponent();
             textBox1.Text = input;
+            textBox2.Text = input2;
         }
   
         public void loadGridMon(int hk)
@@ -29,83 +30,52 @@ namespace DKHocPhan
             DKHPDataContext db = new DKHPDataContext();
             var nv = (from s in db.MonHocs
                       join w in db.HocKies on s.MaHK equals w.maHK
-                      where w.hocKy1 == hk
-                     select new
-                     {
-                         s.maMH,
-                         s.tinChi,
-                         s.tenMon,                         
-                         s.MaHK
-                    });
+                      where w.hocKy1 == hk && !(from a in db.SinhVienDangKies
+                                                join b in db.LopHocPhans on a.maLopHP equals b.maLopHP
+                                                join n in db.MonHocs on b.maMH equals n.maMH
+                                                where a.maSV == Int32.Parse(textBox1.Text)
+                                                select n.tenMon).Contains(s.tenMon)
+                      select new
+                      {
+                          s.maMH,
+                          s.tinChi,
+                          s.tenMon,
+                          w.hocKy1
+                      });
             dgrMon.DataSource = nv;
-            formatGrid();
+
         }
         public void loadGridLHP(string mamon)
         {
             DKHPDataContext db = new DKHPDataContext();
             var n = (from s in db.MonHocs
-                     join c in db.LopHocPhans on s.maMH equals c.maMH
-                     join v in db.ChiTietLopHocPhans on c.maLopHP equals v.maLopHP
+                     join c in db.LopHocPhans on s.maMH equals c.maMH                     
                      where s.maMH == mamon
                      select new
-                     {                                                
+                     {
                          c.maLopHP,
-                         v.maChiTietLopHP,
-                         s.tenMon,                        
+                         s.tenMon,
                          c.tenLop,
                          s.tinChi
                      });
-            dgrLopHocPhan.DataSource = n;
-            if (dgrLopHocPhan.Columns["maChiTietLopHP"] != null)
-            {
-                dgrLopHocPhan.Columns["maChiTietLopHP"].Visible = false;
-            }
+            dgrLopHocPhan.DataSource = n;            
         }
-        public void formatGrid()
-        {
-            if (dgrMon.Columns["lyThuyet"] != null)
-            {
-                dgrMon.Columns["lyThuyet"].Visible = false;
-            }
-            if (dgrMon.Columns["thucHanh"] != null)
-            {
-                dgrMon.Columns["thucHanh"].Visible = false;
-            }
-            if (dgrMon.Columns["maHK"] != null)
-            {
-                dgrMon.Columns["maHK"].Visible = false;
-            }
-            if (dgrMon.Columns["maMH"] != null)
-            {
-                dgrMon.Columns["maMH"].HeaderText = "Mã Môn Học";
-                dgrMon.Columns["maMH"].Width = 30 * dgrMon.Width / 100;
-            }
-            if (dgrMon.Columns["tenMon"] != null)
-            {
-                dgrMon.Columns["tenMon"].HeaderText = "Môn";
-                dgrMon.Columns["tenMon"].Width = 50 * dgrMon.Width / 100;
-            }
-            if (dgrMon.Columns["tinChi"] != null)
-            {
-                dgrMon.Columns["tinChi"].HeaderText = "Tín Chỉ";
-                dgrMon.Columns["tinChi"].Width = 20 * dgrMon.Width / 100;
-            }
-        }
-
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
-        {
-            if (numericUpDown2.Value == 1)
-            {
-                loadGridMon(1);
-            }
-            else
-                loadGridMon(2);
-        }
-
+            
         private void frmDKHP2_Load_1(object sender, EventArgs e)
         {
+            db = new DKHPDataContext();
             loadgridLHPDK(Int32.Parse(textBox1.Text));
-
+            var j = (from g in db.HocKies
+                     where g.NamHoc <= Int32.Parse(textBox2.Text)
+                     select new
+                     {
+                         g.NamHoc,
+                         g.hocKy1
+                     });
+            cboHocKy.DataSource = j;
+            cboHocKy.DisplayMember = "hocKy1";
+            cboHocKy.ValueMember = "NamHoc";
+            
         }
         //Sự Kiện Lấy Giá Trị Trên DgrMon
         private void dgrMon_SelectionChanged(object sender, EventArgs e)
@@ -113,10 +83,6 @@ namespace DKHocPhan
             DataGridViewRow dtr = dgrMon.CurrentRow;
             if (dtr != null && !dtr.IsNewRow)
             {
-                lblMaLopHP.Text = "";
-                lblSoLuong.Text = "";
-                lblTenGiaoVien.Text = "";
-                lblTongso.Text = "";
                 loadGridLHP(dtr.Cells[0].Value.ToString());
             }
             if (dgrMon.RowCount == 0)
@@ -144,31 +110,30 @@ namespace DKHocPhan
         public void loadTTLHP(int ma)
         {
             DKHPDataContext db = new DKHPDataContext();
-            
-            var v = (from a in db.ChiTietLopHocPhans
+
+            var v = (from a in db.LopHocPhans
                      join r in db.GiangViens on a.maGV equals r.maGV
-                     where a.maLopHP==ma
+                     where a.maLopHP == ma
                      select new
-                     {                           
+                     {
                          a.maLopHP,
-                         a.soLuongHienTai,
-                         a.soLuongToiDa,
+                         a.tenLop,
+                         a.LichHoc,
                          r.hotenGV
                      });
-            foreach(var x in v)
+            foreach (var x in v)
             {
                 lblMaLopHP.Text = x.maLopHP.ToString();
                 lblTenGiaoVien.Text = x.hotenGV.ToString();
-                lblSoLuong.Text = x.soLuongHienTai.ToString();
-                lblTongso.Text = x.soLuongToiDa.ToString();
+                lblSoLuong.Text = x.LichHoc.ToString();
+                lblTongso.Text = x.tenLop.ToString();
             }
         }
         public void loadgridLHPDK(int ma)
         {
             DKHPDataContext db = new DKHPDataContext();
-            var v = (from a in db.SinhVienDangKies
-                     join g in db.ChiTietLopHocPhans on a.maChiTietLopHP equals g.maChiTietLopHP
-                     join b in db.LopHocPhans on g.maLopHP equals b.maLopHP
+            var v = (from a in db.SinhVienDangKies                     
+                     join b in db.LopHocPhans on a.maLopHP equals b.maLopHP
                      join n in db.MonHocs on b.maMH equals n.maMH
                      where a.maSV == ma
                      select new
@@ -179,27 +144,45 @@ namespace DKHocPhan
                      });
             dgrLHPDK.DataSource = v;
         }
-        SvDangKiBLL dkbll;
         private void btnDK_Click(object sender, EventArgs e)
-        {            
+        {
             DataGridViewRow dtr = dgrLopHocPhan.CurrentRow;
             if (dtr != null && !dtr.IsNewRow)
             {
-                eSVDangKi v = new eSVDangKi()
-                {
-                    MaSV = Int32.Parse(textBox1.Text),
-                    MaCTLHP = Int32.Parse(dtr.Cells[1].Value.ToString()),
-                };
-                dkbll = new SvDangKiBLL();
-                dkbll.ThemSVDK(v);
-                dkbll = new SvDangKiBLL();
-                dgrLHPDK.Refresh();
+                int hk = 0;
+                int.TryParse(cboHocKy.Text.ToString(), out hk);
+                db = new DKHPDataContext();
+                SinhVienDangKy g = new SinhVienDangKy();
+                g.maSV = Int32.Parse(textBox1.Text);
+                g.maLopHP = Int32.Parse(dtr.Cells[0].Value.ToString());
+                db.SinhVienDangKies.InsertOnSubmit(g);
+                db.SubmitChanges();
                 loadgridLHPDK(Int32.Parse(textBox1.Text));
+                cboHocKy_SelectedIndexChanged(cboHocKy, null);
+                dgrMon_SelectionChanged(dgrMon, null);
+                //loadGridMon(hk);
             }
-            if (dgrLopHocPhan.RowCount == 0)
+            else
             {
-                MessageBox.Show("Chưa Chọn Lớp ");
+                MessageBox.Show("Chưa Chọn Lớp");
             }
+
+        }
+
+        private void cboHocKy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int hk = 0;
+            int.TryParse(cboHocKy.Text.ToString(),out hk);
+            loadGridMon(hk);
+            
+            
+            //MessageBox.Show(cboHocKy.Text.ToString());
+        }
+
+        private void dgrMon_DataSourceChanged(object sender, EventArgs e)
+        {
+            if (dgrMon.RowCount > 0)
+               dgrMon.Rows[0].Cells[0].Selected = true;
         }
     }
 }

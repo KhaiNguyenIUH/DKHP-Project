@@ -41,7 +41,7 @@ namespace DKHocPhan
         {
             panel2.Visible = false;
             this.panel2.Controls.Clear();
-            frmDKHP2 dk = new frmDKHP2(lblMSV.Text);
+            frmDKHP2 dk = new frmDKHP2(lblMSV.Text,lblNam.Text);
             dk.TopLevel = false;
             this.panel2.Controls.Add(dk);
             dk.Show();
@@ -59,6 +59,7 @@ namespace DKHocPhan
                 lblKhoa.Text = user.khoa;
                 lblLop.Text = user.lop;
                 lblNganh.Text = user.nganh;
+                lblNam.Text = (DateTime.Now.Year - user.NamVaoHoc).ToString();
                 if (user.image != null)
                 {
                     MemoryStream memory = new MemoryStream(user.image.ToArray());
@@ -70,16 +71,11 @@ namespace DKHocPhan
             }
         }
 
-        private void btnXemLichhoc_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnDiem_Click(object sender, EventArgs e)
         {
             panel2.Visible = false;
             this.panel2.Controls.Clear();
-            frmDiem dk = new frmDiem();
+            frmDiemSV dk = new frmDiemSV(lblMSV.Text);
             dk.TopLevel = false;
             this.panel2.Controls.Add(dk);
             dk.Show();
@@ -138,6 +134,28 @@ namespace DKHocPhan
                 curcolor = 0;
         }
 
+        private void btnLichHoc_Click(object sender, EventArgs e)
+        {
+            //panel2.Visible = false;
+            this.panel2.Controls.Clear();
+            FrmTKB dk = new FrmTKB(lblMSV.Text);
+            dk.TopLevel = false;
+            this.panel2.Controls.Add(dk);
+            dk.Show();
+            bunifuTransition2.Show(panel2);
+            this.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
 
+        private void btnCo_Click(object sender, EventArgs e)
+        {
+            frmLogin t = new frmLogin();
+            t.Show();
+            this.Hide();
+        }
+
+        private void btnKhong_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
     }
 }

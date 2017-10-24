@@ -28,282 +28,251 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions2 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions3 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            this.tileControl1 = new DevExpress.XtraEditors.TileControl();
-            this.tileGroup2 = new DevExpress.XtraEditors.TileGroup();
-            this.tileItem1 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem2 = new DevExpress.XtraEditors.TileItem();
-            this.tileGroup3 = new DevExpress.XtraEditors.TileGroup();
-            this.tileItem3 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem4 = new DevExpress.XtraEditors.TileItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPDT));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.windowsUIButtonPanel3 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
-            this.windowsUIButtonPanel2 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
-            this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnThoat = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLichThi = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnXemDiem = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnMLHP = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.DoiMau = new System.Windows.Forms.Timer(this.components);
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tileControl1
+            // panel3
             // 
-            this.tileControl1.AppearanceItem.Normal.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tileControl1.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileControl1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tileControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tileControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tileControl1.Groups.Add(this.tileGroup2);
-            this.tileControl1.Groups.Add(this.tileGroup3);
-            this.tileControl1.Location = new System.Drawing.Point(0, 0);
-            this.tileControl1.MaxId = 21;
-            this.tileControl1.Name = "tileControl1";
-            this.tileControl1.Size = new System.Drawing.Size(1016, 566);
-            this.tileControl1.TabIndex = 2;
-            this.tileControl1.Text = "tileControl1";
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.btnThoat);
+            this.panel3.Controls.Add(this.btnLichThi);
+            this.panel3.Controls.Add(this.btnXemDiem);
+            this.panel3.Controls.Add(this.btnMLHP);
+            this.bunifuTransition1.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(268, 643);
+            this.panel3.TabIndex = 1;
             // 
-            // tileGroup2
+            // label9
             // 
-            this.tileGroup2.Items.Add(this.tileItem1);
-            this.tileGroup2.Items.Add(this.tileItem2);
-            this.tileGroup2.Name = "tileGroup2";
+            this.bunifuTransition1.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(6, 611);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(262, 23);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "© K ";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tileItem1
+            // btnThoat
             // 
-            this.tileItem1.AppearanceItem.Normal.BackColor = System.Drawing.Color.Red;
-            this.tileItem1.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem1.AppearanceItem.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.tileItem1.AppearanceItem.Pressed.Options.UseBackColor = true;
-            tileItemElement1.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement1.Appearance.Hovered.Options.UseFont = true;
-            tileItemElement1.Appearance.Hovered.Options.UseTextOptions = true;
-            tileItemElement1.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement1.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement1.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement1.Appearance.Normal.Options.UseFont = true;
-            tileItemElement1.Appearance.Normal.Options.UseTextOptions = true;
-            tileItemElement1.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement1.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement1.Appearance.Selected.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement1.Appearance.Selected.Options.UseFont = true;
-            tileItemElement1.Appearance.Selected.Options.UseTextOptions = true;
-            tileItemElement1.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement1.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement1.MaxWidth = 160;
-            tileItemElement1.Text = "Mở Lớp Học Phần";
-            tileItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileItemElement1.TextLocation = new System.Drawing.Point(75, 0);
-            tileItemElement2.Image = global::DKHocPhan.Properties.Resources.icons8_Add_List_104;
-            tileItemElement2.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
-            tileItemElement2.ImageLocation = new System.Drawing.Point(4, 8);
-            tileItemElement2.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside;
-            tileItemElement2.ImageSize = new System.Drawing.Size(64, 64);
-            this.tileItem1.Elements.Add(tileItemElement1);
-            this.tileItem1.Elements.Add(tileItemElement2);
-            this.tileItem1.Id = 14;
-            this.tileItem1.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
-            this.tileItem1.Name = "tileItem1";
-            this.tileItem1.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem1_ItemClick);
+            this.btnThoat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnThoat.BackColor = System.Drawing.Color.Black;
+            this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThoat.BorderRadius = 7;
+            this.btnThoat.ButtonText = "X";
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnThoat, BunifuAnimatorNS.DecorationType.None);
+            this.btnThoat.DisabledColor = System.Drawing.Color.Gray;
+            this.btnThoat.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnThoat.Iconimage = null;
+            this.btnThoat.Iconimage_right = null;
+            this.btnThoat.Iconimage_right_Selected = null;
+            this.btnThoat.Iconimage_Selected = null;
+            this.btnThoat.IconMarginLeft = 0;
+            this.btnThoat.IconMarginRight = 0;
+            this.btnThoat.IconRightVisible = true;
+            this.btnThoat.IconRightZoom = 0D;
+            this.btnThoat.IconVisible = true;
+            this.btnThoat.IconZoom = 90D;
+            this.btnThoat.IsTab = false;
+            this.btnThoat.Location = new System.Drawing.Point(3, -1);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Normalcolor = System.Drawing.Color.Black;
+            this.btnThoat.OnHovercolor = System.Drawing.Color.Gray;
+            this.btnThoat.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnThoat.selected = false;
+            this.btnThoat.Size = new System.Drawing.Size(32, 30);
+            this.btnThoat.TabIndex = 7;
+            this.btnThoat.Text = "X";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThoat.Textcolor = System.Drawing.Color.White;
+            this.btnThoat.TextFont = new System.Drawing.Font("Mistral", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // tileItem2
+            // btnLichThi
             // 
-            this.tileItem2.AppearanceItem.Normal.BackColor = System.Drawing.Color.DodgerBlue;
-            this.tileItem2.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem2.AppearanceItem.Pressed.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.tileItem2.AppearanceItem.Pressed.Options.UseBackColor = true;
-            tileItemElement3.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement3.Appearance.Hovered.Options.UseFont = true;
-            tileItemElement3.Appearance.Hovered.Options.UseTextOptions = true;
-            tileItemElement3.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement3.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement3.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement3.Appearance.Normal.Options.UseFont = true;
-            tileItemElement3.Appearance.Normal.Options.UseTextOptions = true;
-            tileItemElement3.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement3.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement3.Appearance.Selected.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement3.Appearance.Selected.Options.UseFont = true;
-            tileItemElement3.Appearance.Selected.Options.UseTextOptions = true;
-            tileItemElement3.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement3.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement3.MaxWidth = 150;
-            tileItemElement3.Text = "Xem Danh Sách Lớp Học Phần";
-            tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileItemElement3.TextLocation = new System.Drawing.Point(75, -7);
-            tileItemElement4.Image = global::DKHocPhan.Properties.Resources.icons8_View_104;
-            tileItemElement4.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileItemElement4.ImageLocation = new System.Drawing.Point(4, 8);
-            tileItemElement4.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside;
-            tileItemElement4.ImageSize = new System.Drawing.Size(64, 64);
-            this.tileItem2.Elements.Add(tileItemElement3);
-            this.tileItem2.Elements.Add(tileItemElement4);
-            this.tileItem2.Id = 20;
-            this.tileItem2.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
-            this.tileItem2.Name = "tileItem2";
+            this.btnLichThi.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.btnLichThi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnLichThi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLichThi.BorderRadius = 5;
+            this.btnLichThi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnLichThi.ButtonText = "    Thông Tin Giảng Viên";
+            this.btnLichThi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnLichThi, BunifuAnimatorNS.DecorationType.None);
+            this.btnLichThi.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLichThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichThi.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLichThi.Iconimage = null;
+            this.btnLichThi.Iconimage_right = null;
+            this.btnLichThi.Iconimage_right_Selected = null;
+            this.btnLichThi.Iconimage_Selected = null;
+            this.btnLichThi.IconMarginLeft = 0;
+            this.btnLichThi.IconMarginRight = 0;
+            this.btnLichThi.IconRightVisible = true;
+            this.btnLichThi.IconRightZoom = 0D;
+            this.btnLichThi.IconVisible = true;
+            this.btnLichThi.IconZoom = 90D;
+            this.btnLichThi.IsTab = true;
+            this.btnLichThi.Location = new System.Drawing.Point(10, 302);
+            this.btnLichThi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLichThi.Name = "btnLichThi";
+            this.btnLichThi.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnLichThi.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btnLichThi.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnLichThi.selected = false;
+            this.btnLichThi.Size = new System.Drawing.Size(243, 53);
+            this.btnLichThi.TabIndex = 0;
+            this.btnLichThi.Text = "    Thông Tin Giảng Viên";
+            this.btnLichThi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLichThi.Textcolor = System.Drawing.Color.White;
+            this.btnLichThi.TextFont = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichThi.Click += new System.EventHandler(this.btnLichThi_Click);
             // 
-            // tileGroup3
+            // btnXemDiem
             // 
-            this.tileGroup3.Items.Add(this.tileItem3);
-            this.tileGroup3.Items.Add(this.tileItem4);
-            this.tileGroup3.Name = "tileGroup3";
+            this.btnXemDiem.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.btnXemDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnXemDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnXemDiem.BorderRadius = 5;
+            this.btnXemDiem.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnXemDiem.ButtonText = "    Thông Tin Sinh Viên";
+            this.btnXemDiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnXemDiem, BunifuAnimatorNS.DecorationType.None);
+            this.btnXemDiem.DisabledColor = System.Drawing.Color.Gray;
+            this.btnXemDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemDiem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnXemDiem.Iconimage = null;
+            this.btnXemDiem.Iconimage_right = null;
+            this.btnXemDiem.Iconimage_right_Selected = null;
+            this.btnXemDiem.Iconimage_Selected = null;
+            this.btnXemDiem.IconMarginLeft = 0;
+            this.btnXemDiem.IconMarginRight = 0;
+            this.btnXemDiem.IconRightVisible = true;
+            this.btnXemDiem.IconRightZoom = 0D;
+            this.btnXemDiem.IconVisible = true;
+            this.btnXemDiem.IconZoom = 90D;
+            this.btnXemDiem.IsTab = true;
+            this.btnXemDiem.Location = new System.Drawing.Point(10, 215);
+            this.btnXemDiem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnXemDiem.Name = "btnXemDiem";
+            this.btnXemDiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnXemDiem.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btnXemDiem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnXemDiem.selected = false;
+            this.btnXemDiem.Size = new System.Drawing.Size(243, 53);
+            this.btnXemDiem.TabIndex = 0;
+            this.btnXemDiem.Text = "    Thông Tin Sinh Viên";
+            this.btnXemDiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXemDiem.Textcolor = System.Drawing.Color.White;
+            this.btnXemDiem.TextFont = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemDiem.Click += new System.EventHandler(this.btnXemDiem_Click);
             // 
-            // tileItem3
+            // btnMLHP
             // 
-            this.tileItem3.AppearanceItem.Normal.BackColor = System.Drawing.Color.ForestGreen;
-            this.tileItem3.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem3.AppearanceItem.Pressed.BackColor = System.Drawing.Color.LightGreen;
-            this.tileItem3.AppearanceItem.Pressed.Options.UseBackColor = true;
-            tileItemElement5.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement5.Appearance.Hovered.Options.UseFont = true;
-            tileItemElement5.Appearance.Hovered.Options.UseTextOptions = true;
-            tileItemElement5.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement5.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement5.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement5.Appearance.Normal.Options.UseFont = true;
-            tileItemElement5.Appearance.Normal.Options.UseTextOptions = true;
-            tileItemElement5.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement5.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement5.Appearance.Selected.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement5.Appearance.Selected.Options.UseFont = true;
-            tileItemElement5.Appearance.Selected.Options.UseTextOptions = true;
-            tileItemElement5.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement5.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement5.MaxWidth = 160;
-            tileItemElement5.Text = "Quản Lí Đào Tạo";
-            tileItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileItemElement5.TextLocation = new System.Drawing.Point(75, 0);
-            tileItemElement6.Image = global::DKHocPhan.Properties.Resources.icons8_Edit_File_104;
-            tileItemElement6.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileItemElement6.ImageLocation = new System.Drawing.Point(4, 8);
-            tileItemElement6.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside;
-            tileItemElement6.ImageSize = new System.Drawing.Size(64, 64);
-            this.tileItem3.Elements.Add(tileItemElement5);
-            this.tileItem3.Elements.Add(tileItemElement6);
-            this.tileItem3.Id = 18;
-            this.tileItem3.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
-            this.tileItem3.Name = "tileItem3";
-            this.tileItem3.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem3_ItemClick);
-            // 
-            // tileItem4
-            // 
-            this.tileItem4.AppearanceItem.Pressed.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tileItem4.AppearanceItem.Pressed.Options.UseBackColor = true;
-            tileItemElement7.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement7.Appearance.Hovered.Options.UseFont = true;
-            tileItemElement7.Appearance.Hovered.Options.UseTextOptions = true;
-            tileItemElement7.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement7.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement7.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement7.Appearance.Normal.Options.UseFont = true;
-            tileItemElement7.Appearance.Normal.Options.UseTextOptions = true;
-            tileItemElement7.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement7.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement7.Appearance.Selected.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement7.Appearance.Selected.Options.UseFont = true;
-            tileItemElement7.Appearance.Selected.Options.UseTextOptions = true;
-            tileItemElement7.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement7.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            tileItemElement7.MaxWidth = 160;
-            tileItemElement7.Text = "Tạo Thông Báo";
-            tileItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileItemElement7.TextLocation = new System.Drawing.Point(75, 0);
-            tileItemElement8.Image = global::DKHocPhan.Properties.Resources.icons8_Create_104;
-            tileItemElement8.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileItemElement8.ImageLocation = new System.Drawing.Point(4, 8);
-            tileItemElement8.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside;
-            tileItemElement8.ImageSize = new System.Drawing.Size(64, 64);
-            this.tileItem4.Elements.Add(tileItemElement7);
-            this.tileItem4.Elements.Add(tileItemElement8);
-            this.tileItem4.Id = 19;
-            this.tileItem4.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
-            this.tileItem4.Name = "tileItem4";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.tileControl1);
-            this.panel1.Location = new System.Drawing.Point(-1, 50);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 566);
-            this.panel1.TabIndex = 3;
+            this.btnMLHP.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.btnMLHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnMLHP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMLHP.BorderRadius = 5;
+            this.btnMLHP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnMLHP.ButtonText = "    Mở Lớp Học Phần";
+            this.btnMLHP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnMLHP, BunifuAnimatorNS.DecorationType.None);
+            this.btnMLHP.DisabledColor = System.Drawing.Color.Gray;
+            this.btnMLHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMLHP.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnMLHP.Iconimage = null;
+            this.btnMLHP.Iconimage_right = null;
+            this.btnMLHP.Iconimage_right_Selected = null;
+            this.btnMLHP.Iconimage_Selected = null;
+            this.btnMLHP.IconMarginLeft = 0;
+            this.btnMLHP.IconMarginRight = 0;
+            this.btnMLHP.IconRightVisible = true;
+            this.btnMLHP.IconRightZoom = 0D;
+            this.btnMLHP.IconVisible = true;
+            this.btnMLHP.IconZoom = 90D;
+            this.btnMLHP.IsTab = true;
+            this.btnMLHP.Location = new System.Drawing.Point(10, 128);
+            this.btnMLHP.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnMLHP.Name = "btnMLHP";
+            this.btnMLHP.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnMLHP.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btnMLHP.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnMLHP.selected = false;
+            this.btnMLHP.Size = new System.Drawing.Size(243, 53);
+            this.btnMLHP.TabIndex = 0;
+            this.btnMLHP.Text = "    Mở Lớp Học Phần";
+            this.btnMLHP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMLHP.Textcolor = System.Drawing.Color.White;
+            this.btnMLHP.TextFont = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMLHP.Click += new System.EventHandler(this.btnMLHP_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(-1, 0);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuTransition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.panel2.Location = new System.Drawing.Point(268, -3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1016, 52);
+            this.panel2.Size = new System.Drawing.Size(1018, 648);
             this.panel2.TabIndex = 4;
+            this.panel2.Visible = false;
             // 
-            // panel3
+            // bunifuTransition1
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3.Controls.Add(this.windowsUIButtonPanel3);
-            this.panel3.Controls.Add(this.windowsUIButtonPanel2);
-            this.panel3.Controls.Add(this.windowsUIButtonPanel1);
-            this.panel3.Location = new System.Drawing.Point(3, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1013, 49);
-            this.panel3.TabIndex = 10;
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind;
+            this.bunifuTransition1.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation3;
             // 
-            // windowsUIButtonPanel3
+            // DoiMau
             // 
-            windowsUIButtonImageOptions1.Image = global::DKHocPhan.Properties.Resources.icons8_Back_26;
-            this.windowsUIButtonPanel3.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("", false, windowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "Trở Lại Menu", -1, true, null, true, false, true, null, -1, false)});
-            this.windowsUIButtonPanel3.Location = new System.Drawing.Point(3, 0);
-            this.windowsUIButtonPanel3.Name = "windowsUIButtonPanel3";
-            this.windowsUIButtonPanel3.Size = new System.Drawing.Size(54, 49);
-            this.windowsUIButtonPanel3.TabIndex = 10;
-            this.windowsUIButtonPanel3.Text = "windowsUIButtonPanel3";
-            this.windowsUIButtonPanel3.Click += new System.EventHandler(this.windowsUIButtonPanel3_Click);
-            // 
-            // windowsUIButtonPanel2
-            // 
-            windowsUIButtonImageOptions2.Image = global::DKHocPhan.Properties.Resources.icons8_Back_26;
-            this.windowsUIButtonPanel2.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("", false, windowsUIButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "Trở Lại Menu", -1, true, null, true, false, true, null, -1, false)});
-            this.windowsUIButtonPanel2.Location = new System.Drawing.Point(3, 277);
-            this.windowsUIButtonPanel2.Name = "windowsUIButtonPanel2";
-            this.windowsUIButtonPanel2.Size = new System.Drawing.Size(61, 62);
-            this.windowsUIButtonPanel2.TabIndex = 7;
-            this.windowsUIButtonPanel2.Text = "windowsUIButtonPanel2";
-            // 
-            // windowsUIButtonPanel1
-            // 
-            this.windowsUIButtonPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            windowsUIButtonImageOptions3.Image = global::DKHocPhan.Properties.Resources.icons8_Close_Window_30;
-            this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("", false, windowsUIButtonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "Đóng", -1, true, null, true, false, true, null, -1, false)});
-            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(952, 0);
-            this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
-            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(61, 49);
-            this.windowsUIButtonPanel1.TabIndex = 9;
-            this.windowsUIButtonPanel1.Text = "windowsUIButtonPanel1";
-            this.windowsUIButtonPanel1.Click += new System.EventHandler(this.windowsUIButtonPanel1_Click);
+            this.DoiMau.Enabled = true;
+            this.DoiMau.Tick += new System.EventHandler(this.DoiMau_Tick);
             // 
             // frmPDT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 617);
+            this.ClientSize = new System.Drawing.Size(1277, 643);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPDT";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPDT";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -311,18 +280,14 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.TileControl tileControl1;
-        private DevExpress.XtraEditors.TileGroup tileGroup2;
-        private DevExpress.XtraEditors.TileItem tileItem1;
-        private DevExpress.XtraEditors.TileItem tileItem2;
-        private DevExpress.XtraEditors.TileGroup tileGroup3;
-        private DevExpress.XtraEditors.TileItem tileItem3;
-        private DevExpress.XtraEditors.TileItem tileItem4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel2;
-        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel1;
-        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel3;
+        private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuFlatButton btnThoat;
+        private Bunifu.Framework.UI.BunifuFlatButton btnLichThi;
+        private Bunifu.Framework.UI.BunifuFlatButton btnXemDiem;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMLHP;
+        private System.Windows.Forms.Panel panel2;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
+        private System.Windows.Forms.Timer DoiMau;
     }
 }

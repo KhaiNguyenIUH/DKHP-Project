@@ -26,6 +26,8 @@ namespace BusinessLogic
                             return 1;
                         else if (user.quyentruycap == 2)
                             return 2;
+                        else if (user.quyentruycap == 3)
+                            return 3;
                 return 4;
             }
             

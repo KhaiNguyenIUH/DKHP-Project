@@ -16,7 +16,7 @@ namespace DKHocPhan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDKHP2("2"));
+            Application.Run(new frmLogin());
         }
     }
 }
